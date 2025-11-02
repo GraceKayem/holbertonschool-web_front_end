@@ -41,6 +41,7 @@ html {
 
   --section-header-align: center;
   --section-tagline-transform: uppercase;
+  --section-tagline-margin: 0;
 
   /* Section title properties */
   --section-title-margin: 0;
@@ -56,6 +57,49 @@ html {
   --section-footer-padding: 3rem 0 0;
   --section-footer-align: center;
   --footer-padding: 5rem 0 1rem;
+
+  /* Root custom properties for nav items */
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: var(--font-weight-bold);
+  --nav-item-font-size: var(--font-size-medium);
+  --nav-item-letter-spacing: 0.04rem; /* 4% of root font-size (62.5% of 16px = 10px; 4% = 0.04rem) */
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3rem 0; /* bottom 3rem, others 0 */
+  --nav-item-link-hover: var(--color-primary);
+}
+
+/* Navbar menu float */
+.navbar-menu {
+  float: right;
+}
+
+/* Nav class reset and alignment */
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* Nav items inside nav */
+.nav .nav-item {
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
+}
+
+/* Nav links inside nav */
+.nav .nav-link {
+  display: block;
+  padding: 0.5rem 1rem; 
+}
+
+/* Hover state for nav links */
+.nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
 }
 
 /* Body color */
@@ -110,20 +154,9 @@ a:active {
   color: var(--color-primary);
 }
 
-/* Section general padding */
-.section {
-  padding: var(--section-padding);
-}
-
 /* section-header */
 .section-header {
   text-align: var(--section-header-align);
-  padding: var(--section-header-padding);
-}
-
-/* Section body padding */
-.section-body {
-  padding: var(--section-body-padding);
 }
 
 /* Section title */
@@ -141,6 +174,42 @@ a:active {
   text-transform: var(--section-tagline-transform);
   font-weight: var(--font-weight-bold);
   color: var(--color-primary);
+  margin: var(--section-tagline-margin);
+}
+
+/* container class */
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* new row */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* UL elements with class row */
+ul.row {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Column 1/3 */
+.col-1-3 {
+  width: 33.33%;
+  float: left;
+  padding: 0.5rem; /* half root element (1rem = root font-size) */
+}
+
+/* Column 1/2 */
+.col-1-2 {
+  width: 50%;
+  float: left;
+  padding: 0.5rem;
 }
 
 /* Section footer padding and alignment */
@@ -154,9 +223,14 @@ a:active {
   padding: var(--footer-padding);
 }
 
-/* container class */
-.container {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+/* Footer copyright */
+.footer-copyright {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+}
+
+/* UL in footer */
+footer ul {
+  text-align: right;
 }
