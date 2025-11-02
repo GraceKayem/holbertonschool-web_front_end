@@ -250,7 +250,7 @@ ul.row {
 }
 
 /* UL in footer */
-footer ul {
+.footer ul {
   text-align: right;
 }
 
