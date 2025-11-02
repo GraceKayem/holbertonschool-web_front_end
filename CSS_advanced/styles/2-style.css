@@ -1,0 +1,28 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body color */
+body {
+  color: #161616;
+}
+
+/* All links */
+a {
+  color: #161616; 
+}
+
+/* Visually hidden elements */
+.visually-hidden {
+  display: none;
+}
+
+/* Card categories */
+.card-category {
+  color: #D73953;
+}
+
+/* Section taglines */
+section-tagline {
+  color: #D73953;
+}
