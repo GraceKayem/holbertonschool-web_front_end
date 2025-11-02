@@ -222,7 +222,7 @@ ul.row {
 /* Target all classes starting with col- */
 [class^="col-"] {
   float: left;
-  padding: calc(var(--line-height-base) / 2); /* or 0.5rem if using a fixed value */
+  padding: 0.5rem;
 }
 
 /* Specific col classes no longer need individual padding/float */
