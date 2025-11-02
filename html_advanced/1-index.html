@@ -1,24 +1,7 @@
-#!/usr/bin/env python3
-from bs4 import BeautifulSoup
-
-html_doc = """<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Document</title>
 </head>
 <body>
 </body>
-</html>"""
-
-soup = BeautifulSoup(html_doc, "html.parser")
-html_tag = soup.html
-
-# Only get direct children (tags) of <html>
-html_children = [child for child in html_tag.find_all(recursive=False) if child.name]
-
-if len(html_children) == 2 and html_children[0].name == "head" and html_children[1].name == "body":
-    print("<html> contains <head> and <body> in this order")
-else:
-    print("More than 2 children in HTML:", html_children)
+</html>
