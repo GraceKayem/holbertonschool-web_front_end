@@ -23,6 +23,6 @@ a {
 }
 
 /* Section taglines */
-section-tagline {
+.section-tagline {
   color: #D73953;
 }

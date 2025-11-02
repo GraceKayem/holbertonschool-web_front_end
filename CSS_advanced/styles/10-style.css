@@ -70,7 +70,7 @@ a {
 }
 
 /* Section taglines */
-section-tagline {
+.section-tagline {
   color: var(--color-primary);
 }
 
