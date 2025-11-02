@@ -35,6 +35,9 @@ html {
   /* custom properties */
   --section-header-align: center;
   --section-tagline-transform: uppercase;
+
+  /* new property for section header alignment */
+  --section-header-align: center;
 }
 
 /* Body color */

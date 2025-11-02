@@ -38,6 +38,9 @@ html {
   /* Section title properties */
   --section-title-margin: 0;
   --section-title-color: var(--color-black);
+
+  /* new property for section header alignment */
+  --section-header-align: center;
 }
 
 /* Body color */
