@@ -283,10 +283,9 @@ ul.row {
 }
 
 /* SVG children of social links */
-.social-link svg {
+.social-link > svg {
   fill: var(--text-color);
 }
-
 /* Card title inside card-services */
 .card-services .card-title {
   margin: 0;
