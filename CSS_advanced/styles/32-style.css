@@ -1,0 +1,33 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+/* Custom properties */
+:root {
+  --transition-duration: .3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01)
+}
+
+/* Transformations on card work */
+.card-work:hover .card-image {
+  transform: scale(1.2);
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
+
+/* Animations on navigation items */
+.nav .nav-link::before {
+  transition: all var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Animate the button background */
+.button:hover {
+  transition: color var(--transition-duration) var(--transition-cubic-bezier),
+              background-color var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Transitions on card works */
+.card-work .card-inner {
+  transition: all var(--transition-duration) var(--transition-cubic-bezier);
+}
