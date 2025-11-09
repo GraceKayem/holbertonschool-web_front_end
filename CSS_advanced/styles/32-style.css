@@ -6,7 +6,7 @@
   --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
-/* Transformations on card work */
+/* Card work default states for transitions */
 .card-work .card-image {
   transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
@@ -15,6 +15,11 @@
   transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
+.card-work .card-inner {
+  transition: all var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Card hover transformations */
 .card-work:hover .card-image {
   transform: scale(1.2);
 }
@@ -23,18 +28,18 @@
   transform: scale(0.95);
 }
 
-/* Animations on navigation items */
+/* Navigation items */
 .nav .nav-link::before {
   transition: all var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-/* Animate the button background */
+/* Button hover animation */
 .button {
   transition: color var(--transition-duration) var(--transition-cubic-bezier),
               background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-/* Transitions on card-inner */
-.card-work .card-inner {
-  transition: all var(--transition-duration) var(--transition-cubic-bezier);
+.button:hover {
+  color: var(--button-hover-color, #fff);
+  background-color: var(--button-hover-background, #d73953);
 }
