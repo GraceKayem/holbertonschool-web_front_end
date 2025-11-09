@@ -39,7 +39,8 @@
               background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-.button:hover {
-  color: var(--button-hover-color, #fff);
-  background-color: var(--button-hover-background, #d73953);
+.button {
+  transition: color var(--transition-duration) var(--transition-cubic-bezier),
+              background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
+
