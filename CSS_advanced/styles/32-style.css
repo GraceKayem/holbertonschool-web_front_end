@@ -7,9 +7,16 @@
 }
 
 /* Transformations on card work */
+.card-work .card-image {
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+.card-work .card-outer {
+  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
+}
+
 .card-work:hover .card-image {
   transform: scale(1.2);
-  transition: transform var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
@@ -22,12 +29,12 @@
 }
 
 /* Animate the button background */
-.button:hover {
+.button {
   transition: color var(--transition-duration) var(--transition-cubic-bezier),
               background-color var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-/* Transitions on card works */
+/* Transitions on card-inner */
 .card-work .card-inner {
   transition: all var(--transition-duration) var(--transition-cubic-bezier);
 }
