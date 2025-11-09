@@ -397,7 +397,7 @@ ul.row {
 
 /* Target card-inner when card-work is hovered */
 .card-work:hover .card-inner {
-  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* Target card-title inside card-work */
